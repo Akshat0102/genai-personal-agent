@@ -1,6 +1,5 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import dotenv
 from pydantic import BaseModel
 from agent import run_agent
 
