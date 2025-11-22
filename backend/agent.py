@@ -1,5 +1,5 @@
 from config import OPENAI_API_KEY
-from actions import get_time, get_weather, calculate, summarize
+from actions import get_weather, calculate, summarize
 from langgraph.prebuilt import create_react_agent
 from langchain_openai import ChatOpenAI
 
@@ -11,7 +11,7 @@ llm = ChatOpenAI(
 )
 
 
-tools = [get_time, get_weather, calculate, summarize]
+tools = [get_weather, calculate, summarize]
 
 app = create_react_agent(llm, tools)
 
